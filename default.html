@@ -1,0 +1,41 @@
+﻿<!--File Name: default.html
+	Author Name: Natasha Whitehead
+	Website Name: Natasha Whitehead's Portfolio Website
+	File Discription: This is the projects default page. It is the page that the user will always go to first. This page determines the device that the user 
+	is using and takes them to the appropriate home page.-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+
+<!--Check to see if the user is using a desktop or a mobile device-->
+<script>
+if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent) ) {
+
+	if(window.location.hash == "#desktop"){
+		window.location = "profile_website/desktop/index.html";
+	//If mobile device detected take the user to the mobile site
+	} else {
+    	window.location = "profile_website/index.html";
+	}
+
+}
+//If desktop is detected take user to the desktop website
+else {
+	window.location = "profile_website/desktop/index.html";
+}
+</script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
+
