@@ -14,7 +14,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Natasha Whitehead's Portfolio Website</title>
+        <title>Login</title>
                 <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -54,8 +54,7 @@
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-            	<h4>Welcome to my Portfolio Website</h4>
-				<nav>
+            					<nav>
                     <ul>
                         <li><a href="index.html" class="active"><div class="icon-home">Home</div></a></li>
                         <li><a href="about.html"><div class="icon-user">About Me</div></a></li>
@@ -66,53 +65,31 @@
                     </ul>
 				</nav>
                 <article>
-                	<header>
-                	<!--JQuery Image Slider-->
-                    	<div id="container">
-
-      					<!--  Outer wrapper for presentation only -->
-      						<div id="banner-fade">
-
-        					<!-- start Basic Jquery Slider -->
-        					<ul class="bjqs">
-          						<li><a href="http://webdesign4.georgianc.on.ca/~200247775/tv/index.html">
-								<img src="img/webDevelopment.jpg" title="Web Development" alt="Web Development"></a></li>
-          						<li><a href="http://www.youtube.com/watch?v=kLUsYZVbdoo">
-								<img src="img/arduino.jpg" title="Application/Program Development" alt="Application Development"></a></li>
-          						<li><a href="img/graphic.jpg">
-								<img src="img/graphic.jpg" title="Graphic Design" alt="Graphic Design"></a></li>
-        					</ul>
-       
-        					<!-- end Basic jQuery Slider -->
-      						</div>
-      					<!-- End outer wrapper -->
-    					</div>   
-
-                    </header> 
-                    <!--Mission Statment-->         
+                    <!--Login-->         
                     <footer>
-                        <h3>Mission Statement</h3>
-                        <p>My mission is to help you make your ideas become a reality. I have a great passion for what I do and along with my problem-solving, organization, and time management skills I can help you accheive the results you want on time and on budget.</p>
-                    	<ul>
-        					<li><a href="projects.html">Next Step</a></li>
-        				</ul>
+                    	
+    <div id="form">
+
+<form method="post" action="validate.php">
+
+	<div>
+	<label>Username: </label>
+	<input name="username" />
+	</div>
+	<div>
+	<label>Password:  </label>
+	<input name="password" type="password" />
+	</div>
+	<input type="submit" value="Submit" />
+
+</form>
+<a href="default.php">Home Page</a>
+</div>
+
                     </footer>
                 </article>
-                <!--Keep Connected Links -->
-               	<aside>
-                    <p>Computer Programmer Analyst, making your ideas come to life.</p>
-                    <ul>               
-                    	<li><a href="https://github.com/Natasha44"><div class="icon-github"></div></a></li>
-                    	<li><a href="https://www.facebook.com/profile.php?id=100006827312291"><div class="icon-facebook-rect"></div></a></li>
-                    	<li><a href="https://www.twitter.com/Tashwhitehead44"><div class="icon-twitter-bird"></div></a></li>
-                    	<li><a href="http://www.linkedin.com/profile/view?id=291960877&authType=NAME_SEARCH&authToken=7Yvf&locale=en_US&srchid=2791773441380243969140&srchindex=1&srchtotal=6&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A2791773441380243969140%2CVSRPtargetId%3A291960877%2CVSRPcmpt%3Aprimary"><div class="icon-linkedin-rect"></div></a></li>
-                    </ul>
-                </aside>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
-	
-	<--Link to login-->
-	<a href="login.php">Login</a>
 
 		<!--Footer and Copyright -->
         <div class="footer-container">
@@ -121,17 +98,6 @@
             </footer>
         </div>
         
-        <script src="js/main.js"></script>
-         <!--JavaScript Elements-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
 		
     </body>
 </html>

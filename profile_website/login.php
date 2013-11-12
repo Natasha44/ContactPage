@@ -7,7 +7,7 @@ done as well as giving the user an idea about what I can do and what the website
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Home</title>
+		<title>Login</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=8">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
 		<link href='css/style.css' rel='stylesheet'/>
@@ -20,7 +20,38 @@ done as well as giving the user an idea about what I can do and what the website
 	</head>
 	<body>
 
-    <div id="form">
+		<!------------------------------------------------------------------------------------------------------>
+		<!----------------------------------------------------LOGIN--------------------------------------------->
+		<!------------------------------------------------------------------------------------------------------>
+
+		<!--Header of the page-->
+		<div data-role="header" data-position="inline">
+			<h1>Home</h1>
+		</div>
+		<!--Page content-->
+		<div data-role="content">
+			<!--Logo-->
+			<div>
+				<img src="img/sunset.jpg" alt="image" style="width: 100%; height: 100px; position: relative;">
+			</div>
+			<!--Navigation bar-->
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="index.html" data-transition="slidefade" data-theme="" data-icon="home"
+						class="ui-btn-active ui-state-persist"> Home </a>
+					</li>
+					<li>
+						<a href="about.html" data-transition="slidefade" data-theme="" data-icon="star"> About Me </a>
+					</li>
+					<li>
+						<a href="contact.html" data-transition="slidefade" data-theme="" data-icon="info"> Contact Me </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<div id="form">
 
 <form method="post" action="validate.php">
 
@@ -37,7 +68,13 @@ done as well as giving the user an idea about what I can do and what the website
 </form>
 <a href="default.php">Home Page</a>
 </div>
+		<!--Footer of the page-->
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<h3> &copy; Natasha Whitehead 2013 </h3>
+		</div>
 
-</body>
-
+	</body>
 </html>
+
+    
+
