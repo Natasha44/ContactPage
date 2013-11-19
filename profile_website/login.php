@@ -49,23 +49,30 @@ done as well as giving the user an idea about what I can do and what the website
 					</li>
 				</ul>
 			</div>
+			
+			<form action="validate.php" method="POST">
+            <div data-role="fieldcontain">
+                <label for="textinput1">
+                    Username
+                </label>
+                <input name="username" id="textinput1" placeholder="" value="" type="text">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="textinput2">
+                    Password
+                </label>
+                <input name="password" id="textinput2" placeholder="" value="" type="password">
+            </div>
+            <input value="Submit" type="submit">
+        </form>
+
 		</div>
+		
+		
 
 <div id="form">
 
-<form method="post" action="validate.php">
 
-	<div>
-	<label>Username: </label>
-	<input name="username" />
-	</div>
-	<div>
-	<label>Password:  </label>
-	<input name="password" type="password" />
-	</div>
-	<input type="submit" value="Submit" />
-
-</form>
 <a href="default.php">Home Page</a>
 </div>
 		<!--Footer of the page-->
