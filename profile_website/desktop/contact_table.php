@@ -2,170 +2,75 @@
 <html lang="us">
 <head>
 	<meta charset="utf-8">
-	<title>jQuery UI Example Page</title>
+	<title>Business Contacts</title>
 	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
-		<script>
-	$(function() {
 		
-		/*$( "#accordion" ).accordion();
-		
-
-		
-		var availableTags = [
-			"ActionScript",
-			"AppleScript",
-			"Asp",
-			"BASIC",
-			"C",
-			"C++",
-			"Clojure",
-			"COBOL",
-			"ColdFusion",
-			"Erlang",
-			"Fortran",
-			"Groovy",
-			"Haskell",
-			"Java",
-			"JavaScript",
-			"Lisp",
-			"Perl",
-			"PHP",
-			"Python",
-			"Ruby",
-			"Scala",
-			"Scheme"
-		];
-		$( "#autocomplete" ).autocomplete({
-			source: availableTags
-		});
-		
-
-		
-		$( "#button" ).button();
-		$( "#radioset" ).buttonset();
-		
-
-		
-		$( "#tabs" ).tabs();*/
-		
-
-		
-		$( "#dialog" ).dialog({
-			autoOpen: false,
-			width: 400,
-			buttons: [
-				{
-					text: "Ok",
-					click: function() {
-						$( this ).dialog( "close" );
-					}
-				},
-				{
-					text: "Cancel",
-					click: function() {
-						$( this ).dialog( "close" );
-					}
-				}
-			]
-		});
-
-		// Link to open the dialog
-		$( "#dialog-link" ).click(function( event ) {
-			$( "#dialog" ).dialog( "open" );
-			event.preventDefault();
-		});
-		
-
-		/*
-		$( "#datepicker" ).datepicker({
-			inline: true
-		});
-		
-
-		
-		$( "#slider" ).slider({
-			range: true,
-			values: [ 17, 67 ]
-		});
-		
-
-		
-		$( "#progressbar" ).progressbar({
-			value: 20
-		});*/
-		
-
-		// Hover states on the static widgets
-		$( "#dialog-link, #icons li" ).hover(
-			function() {
-				$( this ).addClass( "ui-state-hover" );
-			},
-			function() {
-				$( this ).removeClass( "ui-state-hover" );
-			}
-		);
-	});
-	</script>
-	<style>
-	body{
-		font: 62.5% "Trebuchet MS", sans-serif;
-		margin: 50px;
-	}
-	.demoHeaders {
-		margin-top: 2em;
-	}
-	#dialog-link {
-		padding: .4em 1em .4em 20px;
-		text-decoration: none;
-		position: relative;
-	}
-	#dialog-link span.ui-icon {
-		margin: 0 5px 0 0;
-		position: absolute;
-		left: .2em;
-		top: 50%;
-		margin-top: -8px;
-	}
-	/*#icons {
-		margin: 0;
-		padding: 0;
-	}
-	#icons li {
-		margin: 2px;
-		position: relative;
-		padding: 4px 0;
-		cursor: pointer;
-		float: left;
-		list-style: none;
-	}
-	#icons span.ui-icon {
-		float: left;
-		margin: 0 4px;
-	}
-	.fakewindowcontain .ui-widget-overlay {
-		position: absolute;
-	}*/
-	</style>
-</head>
+		</head>
 <body>
 
 
-<h2 class="demoHeaders">Dialog</h2>
 
 
 
-<!---Link for creating a new page------>
-<div id="links">
-<ul>
-<li><a href="pages_table.php">View/ Edit Pages</a></li>
-<li> | </li>
-<li><a href="image.php">Edit logo</a></li>
-<li> | </li>
-<li><a href="logout.php">Log Out</a></li>
-</ul>
-</div>
+<!--File Name: index.html
+	Author Name: Natasha Whitehead
+	Website Name: Natasha Whitehead's Portfolio Website
+	File Discription: This is the home page file in which the user will first go to. It shows some of the work I have
+	done as well as a welcome statement, personal tagline and a mission statement to give the user an idea of what I
+	can do and what the website is about-->
+	
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Natasha Whitehead's Portfolio Website</title>
+                <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/logo_font.css">
+    <!-- bjqs.css contains the *essential* css needed for the slider to work -->
+    	<link rel="stylesheet" href="css/bjqs.css">
+
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+    	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+   		<link rel="stylesheet" href="demo.css">
+   	<!-- Google fonts for the header and the body -->
+    	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'> 
+    <!-- load jQuery and the plugin -->
+    	<script src="js/jquery-1.7.1.min.js"></script>
+    	<script src="js/bjqs-1.3.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+         
+        <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'> 
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+		<!--Logo and Name-->
+        <div class="header-container">
+            <header class="wrapper clearfix">
+            	<img src="img/logo.png" id="img" alt="Logo"/>
+                <h1 class="title">Natasha Whitehead</h1>
+            </header>
+        </div>
+        
+        <div id="contacts">
+        <div id="people">
+        <h2 class="demoHeaders">Business Contacts</h2>
 
 <?php
 //Access the current session
@@ -191,7 +96,10 @@ $result = mysqli_query($conn, $sql);
 //Loop through the results from our query and output them one at a time to the page
 while($row = mysqli_fetch_array($result))
 {
-echo '<INPUT TYPE="button" VALUE="'.$row['firstName'] . '" onClick="alert('. $row['phoneNumber'] . ')">';
+
+	$name = $row['firstName'] . ' ' . $row['lastName'];
+ $message = 'Position: ' . $row['position']  . '\nEmail: ' . $row['email'] . '\nAddress: ' . $row['address'] . '\nPhone Number: ' .$row['phoneNumber'];
+   	echo '<input type="button" value="' . $name . '" onClick="alert(\'' . $message . '\');">';
 }
 
 
@@ -200,10 +108,22 @@ echo '<INPUT TYPE="button" VALUE="'.$row['firstName'] . '" onClick="alert('. $ro
 mysqli_close($conn);
 }
 ?>
+<div id="links">
+<ul>
+<li><a href="logout.php">Log Out</a></li>
+</ul>
+</div>
+
+</div>
+</div>
 
 
-
-
+		<!--Footer and Copyright -->
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>&copy; Natasha Whitehead 2013</h3>
+            </footer>
+        </div>
 
 
 </body>

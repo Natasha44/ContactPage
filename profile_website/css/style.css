@@ -113,6 +113,7 @@ article img {
 p a {
 
 	font-size: 130%;
+	text-decoration: none;
 }
 
 footer ul {
@@ -140,4 +141,26 @@ footer ul a {
 
 p {
 	text-align: center;
+}
+
+#links {
+	display: inline;
+	text-align: center;
+	font-size: 120%;
+	color: #8415D4;
+
+}
+
+#number {
+	display: inline;
+	text-align: center;
+	font-size: 120%;
+	color: #8415D4;
+
+	
+}
+
+.ui-block-a {
+	position: relative;
+top: 16px;
 }

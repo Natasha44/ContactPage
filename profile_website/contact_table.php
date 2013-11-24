@@ -1,32 +1,42 @@
-<!doctype html>
-<html lang="us">
-<head>
-	<meta charset="utf-8">
-	<title>jQuery UI Example Page</title>
- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css" />
-</head>
-<body>
+<!--File Name: index.html
+Author Name: Natasha Whitehead
+Website Name: Natasha Whitehead's Portfolio Website
+File Discription: This is the home page mobile file in which the user will first go to. It shows some of the work I have
+done as well as giving the user an idea about what I can do and what the website is about-->
 
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<link href='style.css' rel='stylesheet'/>
+		<link rel="stylesheet" href="themes/purple.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
 
-<h2 class="demoHeaders">Dialog</h2>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 
+	</head>
+	<body>
 
+		<!------------------------------------------------------------------------------------------------------>
+		<!---------------------------------------------------CONTACTS------------------------------------------->
+		<!------------------------------------------------------------------------------------------------------>
 
-<!---Link for creating a new page------>
-<div id="links">
-<ul>
-<li><a href="pages_table.php">View/ Edit Pages</a></li>
-<li> | </li>
-<li><a href="image.php">Edit logo</a></li>
-<li> | </li>
-<li><a href="logout.php">Log Out</a></li>
-</ul>
-</div>
+		<!--Header of the page-->
+		<div data-role="header" data-position="inline">
+			<h1>Login</h1>
+			<a href="index.html" data-role="button">Home</a>
 
-<?php
+		</div>
+		<!--Page content-->
+		<div data-role="content">
+			<!--Logo-->
+			<div>
+				<img src="img/sunset.jpg" alt="image" style="width: 100%; height: 100px; position: relative;">
+			</div>
+			<?php
 //Access the current session
 session_start();
 
@@ -50,33 +60,30 @@ $result = mysqli_query($conn, $sql);
 //Loop through the results from our query and output them one at a time to the page
 while($row = mysqli_fetch_array($result))
 {
+$name = $row['firstName'] . ' ' . $row['lastName'];
  $message = 'Position: ' . $row['position']  . '\nEmail: ' . $row['email'] . '\nAddress: ' . $row['address'] . '\nPhone Number: ' .$row['phoneNumber'];
-//echo $message;
-
-   echo '<input type="button" value="' . $row['firstName'] . '" onClick="alert(\'' . $message . '\');">';
-	echo '<a href="tel:'.$row['phoneNumber'].'">Call ' . $row['firstName'] . '</a>';
+	echo '<div class="ui-grid-a">';
+   	echo '<div class="ui-block-a" id="info"><input type="button" value="' . $name . '" onClick="alert(\'' . $message . '\');"></div>';
+	echo '<div class="ui-block-b"><a href="tel:'.$row['phoneNumber'].'" id="number" data-role="button">Call ' . $row['firstName'] . '</a></div>';
+	echo '</div>';
 }
-
-//echo '</script>';
-//echo "\'Complete Sale?\'#
-//echo '<input type="button" value="' . $row['firstName'] . '" onClick="confirm(' .  $message . ')">';
-///echo '<script type="text/javascript">alert("Data has been submitted to ' . $message . '");</script>';
-//echo '<a onClick="test('<?php echo $message 
-//echo '<input type="button" VALUE="'.$row['firstName'] . '" onClick="alert("' .$message. '")"';
-//echo '<input type="button" VALUE="'.$row['firstName'] . '" onClick="alert(\''.$message.'\')"'; 
-//echo '<INPUT TYPE="button" VALUE="'.$row['firstName'] . '" onClick="echoHello()"';
-//echo '<INPUT TYPE="button" VALUE="'.$row['firstName'] . ' ' . $row['lastName'] . '" onClick="var text = '<?php echo $name;
-//echo '<INPUT TYPE="button" VALUE="'.$row['firstName'] . $row['lastName'] . '" onClick="alert('. $row['position'] . $row['phoneNumber'] . $row['email'] . $row['address'] . $row['phoneNumber'] .')">';
-
-
-
 
 //Dissconnect from the database
 mysqli_close($conn);
 }
 ?>
 
+			<!---Link for creating a new page------>
+<div id="links">
+<a href="logout.php" data-role="button">Log Out</a>
+</div>
+	
+		</div>
+		
+		<!--Footer of the page-->
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<h3> &copy; Natasha Whitehead 2013 </h3>
+		</div>
 
-</body>
-
+	</body>
 </html>

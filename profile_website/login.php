@@ -10,7 +10,7 @@ done as well as giving the user an idea about what I can do and what the website
 		<title>Login</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=8">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-		<link href='css/style.css' rel='stylesheet'/>
+		<link href='style.css' rel='stylesheet'/>
 		<link rel="stylesheet" href="themes/purple.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
 
@@ -26,7 +26,9 @@ done as well as giving the user an idea about what I can do and what the website
 
 		<!--Header of the page-->
 		<div data-role="header" data-position="inline">
-			<h1>Home</h1>
+			<h1>Login</h1>
+			<a href="index.html" data-role="button">Home</a>
+
 		</div>
 		<!--Page content-->
 		<div data-role="content">
@@ -38,8 +40,7 @@ done as well as giving the user an idea about what I can do and what the website
 			<div data-role="navbar" data-iconpos="top">
 				<ul>
 					<li>
-						<a href="index.html" data-transition="slidefade" data-theme="" data-icon="home"
-						class="ui-btn-active ui-state-persist"> Home </a>
+						<a href="index.html" data-transition="slidefade" data-theme="" data-icon="home"> Home </a>
 					</li>
 					<li>
 						<a href="about.html" data-transition="slidefade" data-theme="" data-icon="star"> About Me </a>
@@ -68,13 +69,6 @@ done as well as giving the user an idea about what I can do and what the website
 
 		</div>
 		
-		
-
-<div id="form">
-
-
-<a href="default.php">Home Page</a>
-</div>
 		<!--Footer of the page-->
 		<div data-theme="a" data-role="footer" data-position="fixed">
 			<h3> &copy; Natasha Whitehead 2013 </h3>

@@ -56,12 +56,13 @@
             <div class="main wrapper clearfix">
             					<nav>
                     <ul>
-                        <li><a href="index.html" class="active"><div class="icon-home">Home</div></a></li>
+                        <li><a href="index.html"><div class="icon-home">Home</div></a></li>
                         <li><a href="about.html"><div class="icon-user">About Me</div></a></li>
                         <li><a href="projects.html"><div class="icon-book-open">Projects</div></a></li>
                         <li><a href="services.html"><div class="icon-doc-text-inv">Services</div></a></li>
                         <li><a href="contact.html"><div class="icon-mail-alt">Contact Me</div></a></li>
                         <li><a href="https://github.com/Natasha44"><div class="icon-github"> GitHub</div></a></li>
+                        <li><a href="login.php" class="active"><div class="icon-cog">Login</div></a></li>
                     </ul>
 				</nav>
                 <article>
@@ -83,7 +84,6 @@
 	<input type="submit" value="Submit" />
 
 </form>
-<a href="default.php">Home Page</a>
 </div>
 
                     </footer>

@@ -112,10 +112,59 @@ aside a, p{
 	color: black;
 }
 
+   
+   #contacts {
+	padding: 5px;
+	height:auto; 
+    margin:0 auto;
+}
+
+#people {
+	text-align:center;
+    width:50%; 
+    margin:0 auto;
+}
+
+
+#form {
+	padding: 5px;
+	height:auto; 
+    margin:0 auto; 
+}
+
+form {
+	text-align:center;
+    width:50%; 
+    margin:0 auto;
+}
+
+input[type=button] {
+	
+	color:white;
+	background-color:#8415D4;
+	padding: 5px;
+	margin: 5px;
+	font-size: 200%;
+	border: 6px solid #5C1ED0;
+}
+
+input[type=submit]{
+	
+	
+	color:white;
+	background-color:#8415D4;
+	border: 1px solid #5C1ED0;
+}
 
 /* ==============
     MOBILE: Menu
    ============== */
+   
+label{
+  display: block;
+  float: left;
+  width : 120px;    
+}
    
 nav ul {
     margin: 0;
@@ -154,6 +203,11 @@ nav a:active {
 	background-color: #A90CEB;
 }
 
+#links ul {
+	
+	text-decoration: none;
+	list-style-type:none;
+}
 
 /* ==============
     MOBILE: Main

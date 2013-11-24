@@ -36,8 +36,9 @@ if($count == 1)
 	{
 		session_start();
 		$_SESSION['user_id'] = $row['id'];
+		echo "<script> window.location.replace('contact_table.php'); </script>";
 	
-		header('Location: contact_table.php');
+		//header("Location: contact_table.php");
 	}
 }
 
