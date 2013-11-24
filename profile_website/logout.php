@@ -1,3 +1,9 @@
+<!--File Name: logout.php
+	Author Name: Natasha Whitehead
+	Website Name: Natasha Whitehead's Portfolio Website
+	File Discription: This is the projects logout file in which the user session information is cleared and the user is taken back to the home 
+	page-->
+
 <?php
 
 //Access the existing session object

@@ -1,3 +1,9 @@
+<!--File Name: validate.php
+	Author Name: Natasha Whitehead
+	Website Name: Natasha Whitehead's Portfolio Website
+	File Discription: This is the projects validation file in which the users login information will be validated to see if the username 
+	and password are correct or incorrect-->
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -30,8 +36,6 @@ $count = mysqli_num_rows($result);
 //If login exist in database, allow user to log in, otherwise, deny access
 if($count == 1)
 {
-	echo 'Logged in Successfully';
-	
 	while($row = mysqli_fetch_array($result))
 	{
 		session_start();
@@ -44,7 +48,8 @@ if($count == 1)
 
 else
 {
-	echo 'Invalid Login';
+	echo '<script>alert("Invalid login")</script>';
+	echo "<script> window.location.replace('login.php'); </script>";
 }
 
 //Close database connection

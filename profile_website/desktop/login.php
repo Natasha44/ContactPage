@@ -1,9 +1,7 @@
-<!--File Name: index.html
+<!--File Name: login.php
 	Author Name: Natasha Whitehead
 	Website Name: Natasha Whitehead's Portfolio Website
-	File Discription: This is the home page file in which the user will first go to. It shows some of the work I have
-	done as well as a welcome statement, personal tagline and a mission statement to give the user an idea of what I
-	can do and what the website is about-->
+	File Discription: This is the projects login file in which the user enters their username and password-->
 	
 
 <!DOCTYPE html>
@@ -81,7 +79,7 @@
 	<label>Password:  </label>
 	<input name="password" type="password" />
 	</div>
-	<input type="submit" value="Submit" />
+	<input type="submit" value="Login" />
 
 </form>
 </div>

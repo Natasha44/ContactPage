@@ -1,8 +1,7 @@
-<!--File Name: index.html
-Author Name: Natasha Whitehead
-Website Name: Natasha Whitehead's Portfolio Website
-File Discription: This is the home page mobile file in which the user will first go to. It shows some of the work I have
-done as well as giving the user an idea about what I can do and what the website is about-->
+<!--File Name: login.php
+	Author Name: Natasha Whitehead
+	Website Name: Natasha Whitehead's Portfolio Website
+	File Discription: This is the projects login file in which the user enters their username and password-->
 
 <!DOCTYPE HTML>
 <html>
@@ -51,6 +50,7 @@ done as well as giving the user an idea about what I can do and what the website
 				</ul>
 			</div>
 			
+			<!--Ask user for username and password-->
 			<form action="validate.php" method="POST">
             <div data-role="fieldcontain">
                 <label for="textinput1">
@@ -64,7 +64,7 @@ done as well as giving the user an idea about what I can do and what the website
                 </label>
                 <input name="password" id="textinput2" placeholder="" value="" type="password">
             </div>
-            <input value="Submit" type="submit">
+            <input value="Login" type="submit">
         </form>
 
 		</div>

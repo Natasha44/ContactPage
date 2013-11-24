@@ -1,8 +1,7 @@
-<!--File Name: index.html
-Author Name: Natasha Whitehead
-Website Name: Natasha Whitehead's Portfolio Website
-File Discription: This is the home page mobile file in which the user will first go to. It shows some of the work I have
-done as well as giving the user an idea about what I can do and what the website is about-->
+<!--File Name: contact_table.php
+	Author Name: Natasha Whitehead
+	Website Name: Natasha Whitehead's Portfolio Website
+	File Discription: This is the projects contact table file in which the all the busines contacts are shown and have attached information-->
 
 <!DOCTYPE HTML>
 <html>
@@ -26,7 +25,7 @@ done as well as giving the user an idea about what I can do and what the website
 
 		<!--Header of the page-->
 		<div data-role="header" data-position="inline">
-			<h1>Login</h1>
+			<h1>Contacts</h1>
 			<a href="index.html" data-role="button">Home</a>
 
 		</div>
@@ -56,10 +55,11 @@ $conn = mysqli_connect('webdesign4.georgianc.on.ca', 'db200247775', '93440', 'db
 
 //Execute the query an store the results in a variable
 $result = mysqli_query($conn, $sql);
-//echo '<script type="text/javascript">';
+
 //Loop through the results from our query and output them one at a time to the page
 while($row = mysqli_fetch_array($result))
 {
+//Display contact information
 $name = $row['firstName'] . ' ' . $row['lastName'];
  $message = 'Position: ' . $row['position']  . '\nEmail: ' . $row['email'] . '\nAddress: ' . $row['address'] . '\nPhone Number: ' .$row['phoneNumber'];
 	echo '<div class="ui-grid-a">';
@@ -73,7 +73,7 @@ mysqli_close($conn);
 }
 ?>
 
-			<!---Link for creating a new page------>
+			<!---Link for loging out------>
 <div id="links">
 <a href="logout.php" data-role="button">Log Out</a>
 </div>

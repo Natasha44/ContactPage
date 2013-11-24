@@ -1,26 +1,7 @@
-<!doctype html>
-<html lang="us">
-<head>
-	<meta charset="utf-8">
-	<title>Business Contacts</title>
-	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-	<script src="js/jquery-1.9.1.js"></script>
-	<script src="js/jquery-ui-1.10.3.custom.js"></script>
-		
-		</head>
-<body>
-
-
-
-
-
-<!--File Name: index.html
+<!--File Name: contact_table.php
 	Author Name: Natasha Whitehead
 	Website Name: Natasha Whitehead's Portfolio Website
-	File Discription: This is the home page file in which the user will first go to. It shows some of the work I have
-	done as well as a welcome statement, personal tagline and a mission statement to give the user an idea of what I
-	can do and what the website is about-->
-	
+	File Discription: This is the projects contact table file in which the all the busines contacts are shown and have attached information-->	
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -108,6 +89,7 @@ while($row = mysqli_fetch_array($result))
 mysqli_close($conn);
 }
 ?>
+<!--logout links-->
 <div id="links">
 <ul>
 <li><a href="logout.php">Log Out</a></li>
